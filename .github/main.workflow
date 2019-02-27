@@ -2,8 +2,7 @@ workflow "Install, Test, Build and Deploy" {
   on = "push"
   resolves = [
     "Test",
-    "Build",
-    "Deploy"
+    "maxheld83/ghpages@master",
   ]
 }
 
@@ -31,9 +30,11 @@ action "Build" {
   needs = ["Master"]
 }
 
-action "Deploy" {
-  uses = "actions/npm@master"
-  runs = "npm run deploy"
+action "maxheld83/ghpages@master" {
+  uses = "maxheld83/ghpages@master"
   needs = ["Build"]
-  secrets = ["GITHUB_TOKEN"]
+  secrets = ["GH_PAT"]
+  env = {
+    BUILD_DIR = "storybook-static/"
+  }
 }
