@@ -1,8 +1,7 @@
 workflow "Install, Test, Build and Deploy" {
   on = "push"
   resolves = [
-    "Test",
-    "maxheld83/ghpages@master",
+    "Deploy",
   ]
 }
 
@@ -30,7 +29,7 @@ action "Build" {
   needs = ["Master"]
 }
 
-action "maxheld83/ghpages@master" {
+action "Deploy" {
   uses = "maxheld83/ghpages@master"
   needs = ["Build"]
   secrets = ["GH_PAT"]
