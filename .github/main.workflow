@@ -12,6 +12,7 @@ action "Install" {
 
 action "Test" {
   uses = "actions/npm@master"
-  runs = "npm test"
+  runs = "npm run test:ci"
   needs = ["Install"]
+  secrets = ["CODECOV_TOKEN"]
 }
