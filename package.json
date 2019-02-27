@@ -11,10 +11,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test:ci": "CI=true react-scripts test --coverage && codecov",
+    "test:ci": "CI=true react-scripts test --coverage",
+    "posttest:ci": "codecov",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "deploy": "gh-pages -d storybook-static"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,6 +34,7 @@
     "@storybook/addons": "^4.1.13",
     "@storybook/react": "^4.1.13",
     "babel-loader": "^8.0.5",
-    "codecov": "^3.2.0"
+    "codecov": "^3.2.0",
+    "gh-pages": "^2.0.1"
   }
 }
