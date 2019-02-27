@@ -1,8 +1,19 @@
+# gregbrimble-components
+A React component library for Greg Brimble's projects
+
+[![Greenkeeper](https://badges.greenkeeper.io/GregBrimble/gregbrimble-components.svg)](https://greenkeeper.io/)
+[![Maintainability](https://api.codeclimate.com/v1/badges/cd81d71516761dde6575/maintainability)](https://codeclimate.com/github/GregBrimble/gregbrimble-components/maintainability)
+[![codecov](https://codecov.io/gh/GregBrimble/gregbrimble-components/branch/master/graph/badge.svg)](https://codecov.io/gh/GregBrimble/gregbrimble-components)
+[![License](https://img.shields.io/github/license/gregbrimble/gregbrimble-components.svg)](./LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/gregbrimble/gregbrimble-components.svg?logo=github)](https://github.com/GregBrimble/gregbrimble-components)
+[![GitHub code size](https://img.shields.io/github/languages/code-size/gregbrimble/gregbrimble-components.svg?logo=github)](https://github.com/GregBrimble/gregbrimble-components)
+[![GitHub repo size](https://img.shields.io/github/repo-size/gregbrimble/gregbrimble-components.svg?logo=github)](https://github.com/GregBrimble/gregbrimble-components)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/GregBrimble/gregbrimble-components.svg)](https://greenkeeper.io/)
 
 In the project directory, you can run:
 
