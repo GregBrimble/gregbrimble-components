@@ -1,7 +1,7 @@
 workflow "Install, Test, Build and Publish" {
   on = "push"
   resolves = [
-    "Deploy",
+    "Publish",
   ]
 }
 
@@ -31,7 +31,7 @@ action "Build" {
 
 action "Publish" {
   uses = "actions/npm@master"
-  runs = "npm run semantic-release && rm -rf /github/workspace/.npmrc"
+  runs = "npm run semantic-release"
   needs = ["Build"]
   secrets = [
     "NPM_TOKEN",
@@ -56,7 +56,7 @@ action "Install Storybook" {
 action "Build Storybook" {
   uses = "actions/npm@master"
   runs = "npm run build-storybook"
-  needs = ["Publish"]
+  needs = ["Install Storybook"]
 }
 
 action "Deploy" {
