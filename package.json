@@ -31,7 +31,12 @@
     "type": "git",
     "url": "git+https://github.com/GregBrimble/gregbrimble-components.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "component-library",
+    "components",
+    "storybook"
+  ],
   "author": {
     "name": "Greg Brimble",
     "email": "developer@gregbrimble.com",
