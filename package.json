@@ -17,7 +17,8 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy": "gh-pages -d storybook-static",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "commit": "git-cz"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -58,6 +59,7 @@
     "@storybook/react": "^4.1.13",
     "babel-loader": "^8.0.5",
     "codecov": "^3.2.0",
+    "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^2.0.1",
     "react": "^16.8.3",
     "react-scripts": "2.1.5",
@@ -66,5 +68,10 @@
   },
   "peerDependencies": {
     "react": "^16.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
