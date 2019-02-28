@@ -33,11 +33,15 @@ action "Publish" {
   uses = "actions/npm@master"
   runs = "npm run semantic-release"
   needs = ["Build"]
-  secrets = ["GITHUB_TOKEN", "NPM_TOKEN"]
+  secrets = [
+    "NPM_TOKEN",
+    "GH_TOKEN",
+  ]
   env = {
     CI = "true"
   }
 }
+
 action "Deploy" {
   uses = "maxheld83/ghpages@master"
   needs = ["Publish"]
