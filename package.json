@@ -1,40 +1,63 @@
 {
   "name": "gregbrimble-components",
   "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
-  },
+  "description": "A React component library for Greg Brimble's projects",
+  "main": "dist/index",
+  "module": "dist/index",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "NODE_ENV=production babel src/components --out-dir dist --copy-files",
+    "clean": "rm -rf dist",
     "test": "react-scripts test",
-    "test:ci": "CI=true react-scripts test --coverage",
+    "test:ci": "CI=true npm test -- --coverage",
     "posttest:ci": "codecov",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy": "gh-pages -d storybook-static"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx}",
+      "!src/components/**/*.stories.*"
+    ]
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GregBrimble/gregbrimble-components.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Greg Brimble",
+    "email": "developer@gregbrimble.com",
+    "url": "https://gregbrimble.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GregBrimble/gregbrimble-components/issues"
+  },
+  "homepage": "https://components.gregbrimble.com/",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^4.1.13",
     "@storybook/addon-links": "^4.1.13",
     "@storybook/addons": "^4.1.13",
     "@storybook/react": "^4.1.13",
     "babel-loader": "^8.0.5",
     "codecov": "^3.2.0",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "react": "^16.8.3",
+    "react-scripts": "2.1.5",
+    "react-test-renderer": "^16.8.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.3"
   }
 }
