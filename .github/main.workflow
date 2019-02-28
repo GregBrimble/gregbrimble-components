@@ -25,7 +25,7 @@ action "Master" {
 
 action "Build" {
   uses = "actions/npm@master"
-  runs = "npm run build-storybook"
+  runs = "npm run build"
   needs = ["Master"]
 }
 
@@ -42,9 +42,15 @@ action "Publish" {
   }
 }
 
+action "Build Storybook" {
+  uses = "actions/npm@master"
+  runs = "npm run build-storybook"
+  needs = ["Publish"]
+}
+
 action "Deploy" {
   uses = "maxheld83/ghpages@master"
-  needs = ["Publish"]
+  needs = ["Build Storybook"]
   secrets = ["GH_PAT"]
   env = {
     BUILD_DIR = "storybook-static/"
