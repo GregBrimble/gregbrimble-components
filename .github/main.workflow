@@ -29,9 +29,15 @@ action "Build" {
   needs = ["Master"]
 }
 
+action "Publish" {
+  uses = "actions/npm@master"
+  runs = "CI=true npm run semantic-release"
+  needs = ["Build"]
+  secrets = ["GH_TOKEN", "NPM_TOKEN"]
+}
 action "Deploy" {
   uses = "maxheld83/ghpages@master"
-  needs = ["Build"]
+  needs = ["Publish"]
   secrets = ["GH_PAT"]
   env = {
     BUILD_DIR = "storybook-static/"
