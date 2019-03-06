@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`H6 renders properly 1`] = `
+<h6
+  className="sc-bdVaJa sc-bwzfXH dNhPTO sc-htpNat irDUKp"
+>
+  Headline 1
+</h6>
+`;

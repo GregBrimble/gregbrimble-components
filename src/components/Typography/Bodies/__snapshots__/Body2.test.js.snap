@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body2 renders properly 1`] = `
+<p
+  className="sc-bdVaJa sc-bwzfXH hnZHJm"
+>
+  Body 2
+</p>
+`;

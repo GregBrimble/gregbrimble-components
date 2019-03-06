@@ -1,8 +1,15 @@
 import React from 'react';
+import {storiesOf} from '@storybook/react';
 
-import { storiesOf } from '@storybook/react';
-import { linkTo } from '@storybook/addon-links';
+import * as README from '../../README.md';
 
-import { Button, Welcome } from '@storybook/react/demo';
-
-storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
+storiesOf('Welcome', module).add('to gregbrimble-components', () => {}, {
+    info: {
+        header: false,
+        text: README,
+        source: false
+    },
+    options: {
+        showAddonPanel: false
+    }
+});

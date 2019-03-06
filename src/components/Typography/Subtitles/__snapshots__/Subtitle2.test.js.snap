@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Subtitle2 renders properly 1`] = `
+<h6
+  className="sc-bdVaJa sc-bwzfXH iiiWzs"
+>
+  Subtitle 2
+</h6>
+`;

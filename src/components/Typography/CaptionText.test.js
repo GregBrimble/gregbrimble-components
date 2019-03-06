@@ -1,11 +1,11 @@
 import React from 'react';
-import Button from './Button';
 import renderer from 'react-test-renderer';
+import CaptionText from "./CaptionText";
 
-describe('Button', () => {
+describe('CaptionText', () => {
     it('renders properly', () => {
         const tree = renderer
-            .create(<Button/>)
+            .create(<CaptionText>Caption Text</CaptionText>)
             .toJSON();
         expect(tree).toMatchSnapshot();
     });

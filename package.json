@@ -10,7 +10,7 @@
   "scripts": {
     "build": "NODE_ENV=production babel src/components --out-dir dist --copy-files",
     "clean": "rm -rf dist",
-    "test": "react-scripts test",
+    "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test",
     "test:ci": "CI=true npm test -- --coverage",
     "posttest:ci": "codecov",
     "eject": "react-scripts eject",
@@ -53,25 +53,37 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^4.1.13",
-    "@storybook/addon-links": "^4.1.13",
-    "@storybook/addons": "^4.1.13",
-    "@storybook/react": "^4.1.13",
+    "@storybook/addon-a11y": "^5.0.0",
+    "@storybook/addon-actions": "^5.0.0",
+    "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-info": "^5.0.0",
+    "@storybook/addon-knobs": "^5.0.0",
+    "@storybook/addon-links": "^5.0.0",
+    "@storybook/addon-viewport": "^5.0.0",
+    "@storybook/addons": "^5.0.0",
+    "@storybook/react": "^5.0.0",
+    "@storybook/theming": "^5.0.0",
     "babel-loader": "^8.0.5",
     "codecov": "^3.2.0",
     "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^2.0.1",
-    "react": "^16.8.3",
-    "react-scripts": "2.1.5",
-    "react-test-renderer": "^16.8.3",
-    "semantic-release": "^15.13.3"
+    "react": "^16.8.4",
+    "react-scripts": "^2.1.5",
+    "react-test-renderer": "^16.8.4",
+    "semantic-release": "^15.13.3",
+    "storybook": "^1.0.0",
+    "storybook-addon-styled-component-theme": "^1.1.1"
   },
   "peerDependencies": {
-    "react": "^16.8.3"
+    "react": "^16.8.4"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "styled-components": "^4.1.3"
   }
 }
