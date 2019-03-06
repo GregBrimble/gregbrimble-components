@@ -6,7 +6,7 @@ workflow "Install, Test, Build and Publish" {
 }
 
 action "Install" {
-  uses = "actions/npm@master"
+  uses = "Borales/actions-yarn@master"
   args = "install"
 }
 

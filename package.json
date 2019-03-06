@@ -8,9 +8,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "NODE_ENV=production babel src/components --out-dir dist --copy-files",
+    "build": "NODE_ENV=production babel src --out-dir dist",
     "clean": "rm -rf dist",
-    "test": "SKIP_PREFLIGHT_CHECK=true react-scripts test",
+    "test": "react-scripts test",
     "test:ci": "CI=true npm test -- --coverage",
     "posttest:ci": "codecov",
     "eject": "react-scripts eject",
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-a11y": "^5.0.0",
     "@storybook/addon-actions": "^5.0.0",
@@ -68,6 +69,7 @@
     "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^2.0.1",
     "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-scripts": "^2.1.5",
     "react-test-renderer": "^16.8.4",
     "semantic-release": "^15.13.3",
@@ -75,7 +77,8 @@
     "storybook-addon-styled-component-theme": "^1.1.1"
   },
   "peerDependencies": {
-    "react": "^16.8.4"
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "config": {
     "commitizen": {
