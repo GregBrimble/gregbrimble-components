@@ -49,7 +49,7 @@ workflow "Deploy Storybook" {
 }
 
 action "Install Storybook" {
-  uses = "actions/npm@master"
+  uses = "Borales/actions-yarn@master"
   args = "install"
 }
 

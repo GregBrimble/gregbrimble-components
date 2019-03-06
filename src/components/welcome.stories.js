@@ -5,7 +5,6 @@ import * as README from '../../README.md';
 
 storiesOf('Welcome', module).add('to gregbrimble-components', () => {}, {
     info: {
-        header: false,
         text: README,
         source: false
     },
