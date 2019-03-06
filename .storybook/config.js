@@ -19,12 +19,13 @@ addParameters({
     }
 });
 
-// import {withInfo} from '@storybook/addon-info';
-// addDecorator(
-//     withInfo({
-//         inline: true
-//     })
-// );
+import {withInfo} from '@storybook/addon-info';
+addDecorator(
+    withInfo({
+        header: false,
+        inline: true
+    })
+);
 
 addDecorator(withA11Y);
 addDecorator(withKnobs);

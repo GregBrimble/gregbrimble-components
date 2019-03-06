@@ -1,4 +1,8 @@
-src/
 .babelrc
-dist/**/__snapshots__
-dist/**/*.stories.js
+.gitignore
+.github/
+.idea/
+.storybook/
+public/
+src/
+yarn.lock
