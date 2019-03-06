@@ -68,11 +68,17 @@
     "codecov": "^3.2.0",
     "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^2.0.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-scripts": "^2.1.5",
     "react-test-renderer": "^16.8.4",
     "semantic-release": "^15.13.3",
     "storybook": "^1.0.0",
     "storybook-addon-styled-component-theme": "^1.1.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   },
   "config": {
     "commitizen": {
@@ -81,8 +87,6 @@
   },
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
     "styled-components": "^4.1.3"
   }
 }
