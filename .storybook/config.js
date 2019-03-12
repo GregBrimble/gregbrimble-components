@@ -7,7 +7,7 @@ import {withThemesProvider} from 'storybook-addon-styled-component-theme';
 import Theme9 from "../src/themes/Theme9";
 import ThemeDefault from "../src/themes/ThemeDefault";
 
-const req = require.context('../src/components', true, /\.stories\.js$/);
+const req = require.context('../src', true, /\.stories\.js$/);
 
 addParameters({
     options: {

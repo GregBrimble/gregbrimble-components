@@ -1,3 +1,5 @@
+// Components
+
 import Body1 from "./components/Typography/Bodies/Body1";
 import Body2 from "./components/Typography/Bodies/Body2";
 
@@ -15,7 +17,22 @@ import ButtonText from "./components/Typography/ButtonText";
 import CaptionText from "./components/Typography/CaptionText";
 import OverlineText from "./components/Typography/OverlineText";
 
+// Themes
+
+import ThemeDefault from "./themes/ThemeDefault";
+import Theme9 from "./themes/Theme9";
+
+// Fonts
+
+import Fonts from "./fonts";
+
+/*********
+ * Exports
+ *********/
+
 export {
+    // Components
+
     Body1,
     Body2,
 
@@ -31,5 +48,14 @@ export {
 
     ButtonText,
     CaptionText,
-    OverlineText
+    OverlineText,
+
+    // Themes
+
+    ThemeDefault,
+    Theme9,
+
+    // Fonts
+
+    Fonts
 };
