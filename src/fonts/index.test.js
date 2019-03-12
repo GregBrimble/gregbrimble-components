@@ -1,11 +1,11 @@
 import React from 'react';
-import OverlineText from './OverlineText';
+import Fonts from './index';
 import renderer from 'react-test-renderer';
 
-describe('OverlineText', () => {
+describe('Fonts', () => {
     it('renders properly', () => {
         const tree = renderer
-            .create(<OverlineText>Overline Text</OverlineText>)
+            .create(<Fonts />)
             .toJSON();
         expect(tree).toMatchSnapshot();
     });

@@ -3,3 +3,8 @@
 License and other copyright information for each module is included in the image under `node_modules/{module}`.
 
 More information for each package can be found at `https://www.npmjs.com/package/{package}`.
+
+## Google Fonts
+License and other copyright information for each font is included in the folder under `src/fonts/{font}`.
+
+More information for each font can be found at `https://www.npmjs.com/package/{package}`.
