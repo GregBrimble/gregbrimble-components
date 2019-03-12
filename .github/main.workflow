@@ -10,10 +10,16 @@ action "Install" {
   args = "install"
 }
 
+action "Lint" {
+  uses = "actions/npm@master"
+  runs = "npm run lint"
+  needs = ["Install"]
+}
+
 action "Test" {
   uses = "actions/npm@master"
   runs = "npm run test:ci"
-  needs = ["Install"]
+  needs = ["Lint"]
   secrets = ["CODECOV_TOKEN"]
 }
 

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 const Fonts = createGlobalStyle`
     /* cyrillic-ext */
@@ -197,6 +197,6 @@ const Fonts = createGlobalStyle`
     html {
       font-family: 'Open Sans', sans-serif;
     }
-`;
+`
 
-export default Fonts;
+export default Fonts

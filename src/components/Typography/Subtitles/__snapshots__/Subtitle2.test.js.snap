@@ -2,7 +2,7 @@
 
 exports[`Subtitle2 renders properly 1`] = `
 <h6
-  className="sc-bdVaJa sc-bwzfXH iqdCJl"
+  className="sc-bdVaJa sc-bwzfXH bZhfvs"
 >
   Subtitle 2
 </h6>
