@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react"
 
-import {storiesOf} from '@storybook/react';
+import { storiesOf } from "@storybook/react"
 
-import {text} from '@storybook/addon-knobs';
+import { text } from "@storybook/addon-knobs"
 
-import CaptionText from "./CaptionText";
+import CaptionText from "./CaptionText"
 
-storiesOf('Typography', module)
-    .add('Caption Text', () => <CaptionText>{text('Text', 'Caption Text')}</CaptionText>);
+storiesOf("Typography", module).add("Caption Text", () => (
+  <CaptionText>{text("Text", "Caption Text")}</CaptionText>
+))

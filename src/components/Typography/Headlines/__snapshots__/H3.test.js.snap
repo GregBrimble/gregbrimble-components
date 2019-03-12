@@ -2,7 +2,7 @@
 
 exports[`H3 renders properly 1`] = `
 <h3
-  className="sc-bdVaJa hEOvXI sc-htpNat dzkfLR"
+  className="sc-bdVaJa kRyPr sc-htpNat iuNUUA"
 >
   Headline 1
 </h3>
