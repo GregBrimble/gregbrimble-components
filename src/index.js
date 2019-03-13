@@ -26,6 +26,10 @@ import Theme9 from "./themes/Theme9"
 
 import Fonts from "./fonts"
 
+// Global
+
+import GlobalStyle from "./global/styles"
+
 /*********
  * Exports
  *********/
@@ -53,4 +57,6 @@ export {
   // Fonts
 
   Fonts,
+  // Global
+  GlobalStyle,
 }
