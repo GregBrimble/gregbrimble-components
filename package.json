@@ -19,7 +19,7 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "deploy": "gh-pages -d storybook-static",
-    "semantic-release": "semantic-release",
+    "semantic-release": "semantic-release --analyze-commits semantic-release-gitmoji",
     "commit": "git-cz"
   },
   "jest": {
