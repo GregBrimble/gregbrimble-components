@@ -1,8 +1,0 @@
-.babelrc
-.gitignore
-.github/
-.idea/
-.storybook/
-public/
-src/
-yarn.lock
