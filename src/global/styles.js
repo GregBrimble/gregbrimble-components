@@ -356,6 +356,7 @@ const GlobalStyle = createGlobalStyle`
   /* END OF NORMALIZE
      ========================================================================== */
 
+  /* FIXERS */
   html {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
@@ -367,7 +368,6 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    font-family: "Open Sans", sans-serif;
   }
   html, body {
     width: 100%;
@@ -379,6 +379,29 @@ const GlobalStyle = createGlobalStyle`
     overscroll-behavior-y: contain;
     background-color: ${props => props.theme.neutral[`050`]};
     color: ${props => props.theme.neutral[`900`]};
+  }
+  
+  /* STYLES */
+  html {
+    font-family: "Open Sans", sans-serif;
+  }
+  body {
+    background-color: ${props => props.theme.neutral[`050`]};
+    color: ${props => props.theme.neutral[`900`]};
+  }
+  a, a:link, a:visited {
+    color: ${props => props.theme.primary[`700`]};
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    text-decoration: underline;
+  }
+  hr {
+    height: 6px;
+    border: none;
+    color: ${props => props.theme.supporting[0][`400`]};
+    background-color: ${props => props.theme.supporting[0][`400`]};
+    width: calc(200%/3);
   }
 `
 
