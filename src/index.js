@@ -17,6 +17,10 @@ import ButtonText from "./components/Typography/ButtonText"
 import CaptionText from "./components/Typography/CaptionText"
 import OverlineText from "./components/Typography/OverlineText"
 
+import ExternalLink from "./components/Links/ExternalLink"
+
+import HR from "./components/Miscellaneous/HR"
+
 // Themes
 
 import ThemeDefault from "./themes/ThemeDefault"
@@ -50,6 +54,8 @@ export {
   ButtonText,
   CaptionText,
   OverlineText,
+  ExternalLink,
+  HR,
   // Themes
 
   ThemeDefault,
@@ -58,5 +64,6 @@ export {
 
   Fonts,
   // Global
+
   GlobalStyle,
 }
