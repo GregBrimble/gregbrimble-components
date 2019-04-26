@@ -377,8 +377,8 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     overscroll-behavior-y: contain;
-    background-color: ${props => props.theme.neutral["050"]};
-    color: ${props => props.theme.neutral["900"]};
+    background-color: ${props => props.theme.neutral[`050`]};
+    color: ${props => props.theme.neutral[`900`]};
   }
 `
 
