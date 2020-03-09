@@ -1,7 +1,7 @@
 # gregbrimble-components
 A React component library for Greg Brimble's projects
 
-[![Greenkeeper](https://badges.greenkeeper.io/GregBrimble/gregbrimble-components.svg)](https://greenkeeper.io/)
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/cd81d71516761dde6575/maintainability)](https://codeclimate.com/github/GregBrimble/gregbrimble-components/maintainability)
 [![codecov](https://codecov.io/gh/GregBrimble/gregbrimble-components/branch/master/graph/badge.svg)](https://codecov.io/gh/GregBrimble/gregbrimble-components)
 [![License](https://img.shields.io/github/license/gregbrimble/gregbrimble-components.svg)](./LICENSE)
